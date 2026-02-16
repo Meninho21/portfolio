@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Filomeno Antunes</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-cover bg-center bg-no-repeat" style="background-image: url('https://via.placeholder.com/1920x1080');">
-
-    <nav class="bg-gray-900 text-white">
+<body>
+    <nav class="h-16 bg-gray-900 text-white flex items-center px-6 fixed top-0 left-0 w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
@@ -39,7 +38,7 @@
 
         <!-- Mobile menu (hidden by default) -->
         <div id="mobile-menu" class="lg:hidden hidden px-4 pt-2 pb-4 space-y-1 bg-gray-700">
-            <a href="index.html" class="block hover:bg-gray-600 rounded px-2 py-1">About me</a>
+            <a href="#" class="block hover:bg-gray-600 rounded px-2 py-1">About me</a>
             <a href="contact.html" class="block hover:bg-gray-600 rounded px-2 py-1">Contact</a>
         </div>
     </nav>
@@ -54,47 +53,62 @@
         });
     </script>
 
-   <section class="bg-gray-900 min-h-screen flex items-center justify-center p-6 pt-safe -mt-16">
-  <div
-    id="contact-box"
-    class="bg-white shadow-lg rounded-lg max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 p-8
-           opacity-0 translate-y-32 transition-all duration-1000 ease-out"
-  >
-            <div class="flex flex-col justify-center space-y-4">
-                <h2 class="text-3xl font-bold text-gray-800">Get in Touch</h2>
-                <div class="space-y-2">
-                    <p class="flex items-center text-gray-700">
-                        <span class="mr-2">✉️</span> <a
-                            href="mailto:filomeno_antunes@hotmail.com">filomeno_antunes@hotmail.com</a>
-                    </p>
-                    <p class="flex items-center text-gray-700">
-                        <span class="mr-2">🌐</span> <a href="https://linkedin.com/in/filomeno-antunes"
-                            target="_blank">linkedin.com/in/filomeno-antunes</a>
-                    </p>
-                    <p class="flex items-center text-gray-700">
-                        <span class="mr-2">🌐</span> <a href="https://github.com/Meninho21"
-                            target="_blank">github.com/Meninho21</a>
-                    </p>
+    <section class="bg-white py-20">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h1 class="text-4xl font-bold mb-4">Hi, I'm Jane Doe</h1>
+            <p class="text-gray-600 mb-6">A passionate web developer who loves crafting beautiful and functional
+                websites.</p>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="mx-auto rounded-full shadow-lg">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-4">
+        <div class="max-w-4xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <img src="https://via.placeholder.com/400x300" alt="Coding illustration" class="rounded-lg shadow-lg">
+            <div>
+                <h2 class="text-3xl font-bold mb-4">About Me</h2>
+                <p class="mb-4">I am a front-end developer with a love for creating clean, user-friendly interfaces. I
+                    enjoy learning new technologies and turning ideas into real websites and applications.</p>
+                <p class="mb-4">When I'm not coding, I enjoy photography, hiking, and exploring new coffee shops in the
+                    city.</p>
+                <a href="contact.html"
+                    class="inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Get in
+                    Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="bg-gray-50 py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transform transition">
+                    <h3 class="font-semibold mb-2">HTML</h3>
+                    <p class="text-gray-500">Semantic markup for clean web pages</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transform transition">
+                    <h3 class="font-semibold mb-2">CSS / Tailwind</h3>
+                    <p class="text-gray-500">Beautiful and responsive designs</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transform transition">
+                    <h3 class="font-semibold mb-2">JavaScript</h3>
+                    <p class="text-gray-500">Interactive and dynamic websites</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow hover:scale-105 transform transition">
+                    <h3 class="font-semibold mb-2">React</h3>
+                    <p class="text-gray-500">Modern front-end applications</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <script>
-        const box = document.getElementById("contact-box");
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>&copy; 2026 Jane Doe. All rights reserved.</p>
+    </footer>
 
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    box.classList.remove("opacity-0", "translate-y-32"); // remove start state
-                    box.classList.add("opacity-100", "translate-y-0");   // slide to final position
-                }
-            },
-            { threshold: 0.2 }
-        );
-
-        observer.observe(box);
-    </script>
 </body>
 
 </html>

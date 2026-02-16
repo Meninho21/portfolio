@@ -9,6 +9,51 @@
 </head>
 
 <body>
+
+    <nav class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold">My Portfolio</a>
+                </div>
+
+                <!-- Menu button (mobile) -->
+                <div class="lg:hidden">
+                    <button id="menu-button" class="focus:outline-none">
+                        <!-- Hamburger icon -->
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Menu links -->
+                <div class="hidden lg:flex space-x-8">
+                    <a href="#" class="hover:text-gray-300">About me</a>
+                    <a href="contact.html" class="hover:text-gray-300">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="lg:hidden hidden px-4 pt-2 pb-4 space-y-1 bg-gray-700">
+            <a href="index.html" class="block hover:bg-gray-600 rounded px-2 py-1">About me</a>
+            <a href="contact.html" class="block hover:bg-gray-600 rounded px-2 py-1">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+        // Mobile menu toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
     <section class="bg-gray-900 min-h-screen flex items-center justify-center p-6">
         <div class="bg-white shadow-lg rounded-lg max-w-4xl w-full grid grid-cols-1 md:grid-cols-2 gap-8 p-8">
             <div class="flex flex-col justify-center space-y-4">
@@ -17,6 +62,10 @@
                     <p class="flex items-center text-gray-700">
                         <span class="mr-2">✉️</span> <a
                             href="mailto:filomeno_antunes@hotmail.com">filomeno_antunes@hotmail.com</a>
+                    </p>
+                    <p class="flex items-center text-gray-700">
+                        <span class="mr-2">🌐</span> <a href="https://linkedin.com/in/filomeno-antunes"
+                            target="_blank">linkedin.com/in/filomeno-antunes</a>
                     </p>
                     <p class="flex items-center text-gray-700">
                         <span class="mr-2">🌐</span> <a href="https://github.com/Meninho21"
@@ -29,3 +78,4 @@
 </body>
 
 </html>
+

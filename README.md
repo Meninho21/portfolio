@@ -1,2 +1,2 @@
 # portfolio
-A short introduction about me.
+A short introduction to me.

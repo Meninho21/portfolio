@@ -6,12 +6,10 @@ export class AIRevolution extends Phaser.Scene {
 
     preload() {    
         // Player animation
-        this.load.spritesheet('player', 'assets/Animated Guy.png', { frameWidth: 160, frameHeight: 160 });
+        this.load.spritesheet('player', './Animated Guy.png', { frameWidth: 160, frameHeight: 160 });
     }
 
     create() {
-        this.background = this.add.tileSprite(640, 360, 1280, 720, 'background');
-
         const player = this.add.sprite(640, 360, 'player');
 
         player.anims.create({

@@ -4,7 +4,6 @@ const config = {
     type: Phaser.AUTO,
     title: 'Developer vs AI',
     description: '',
-    parent: 'game-container',
     width: 1280,
     height: 720,
     backgroundColor: '#000000',

@@ -1,4 +1,4 @@
-import { AIRevolution } from './scenes/AIRevolution.js';
+import { AIRevolution } from './AIRevolution.js';
 
 const config = {
     type: Phaser.AUTO,
